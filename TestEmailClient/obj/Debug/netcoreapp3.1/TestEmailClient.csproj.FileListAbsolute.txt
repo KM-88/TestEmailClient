@@ -1,0 +1,17 @@
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\TestEmailClient.exe
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.csprojAssemblyReference.cache
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.AssemblyInfoInputs.cache
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.AssemblyInfo.cs
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.csproj.CopyComplete
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\TestEmailClient.deps.json
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\TestEmailClient.runtimeconfig.json
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\TestEmailClient.runtimeconfig.dev.json
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\TestEmailClient.dll
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\TestEmailClient.pdb
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Clients.ActiveDirectory.dll
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.dll
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.pdb
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.genruntimeconfig.cache
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Kranti\source\repos\TestEmailClient\TestEmailClient\obj\Debug\netcoreapp3.1\TestEmailClient.csproj.CoreCompileInputs.cache
