@@ -14,6 +14,7 @@ namespace TestEmailClient
         private const string addInstance = "https://login.microsoftonline.com/{0}";
         private const string resource = "https://graph.microsoft.com";
 
+
         //Personal Domain Details
         private const string clientId = "d438bebc-42ea-4230-9622-dba9349eed3e";
         private const string tenant = "testTenantKM.onmicrosoft.com";
@@ -55,7 +56,43 @@ namespace TestEmailClient
                 Task<string> userMailDetails = GetUserMails(token.Result);
                 userMailDetails.Wait();
                 Console.WriteLine("Emails : " + userMailDetails.Result);
+
+                Task<string> userCalendardetails = GetUserCalendarDetails(user, token.Result);
+                userCalendardetails.Wait();
+                Console.WriteLine("Calendar : " + userCalendardetails.Result);
+
+                Task<string> userDriveDetails = GetUserDriveDetails(user, token.Result);
+                userDriveDetails.Wait();
+                Console.WriteLine("Drive details : " + userDriveDetails.Result);
             }
+        }
+
+        private static async Task<string> GetUserDriveDetails(User user, string result)
+        {
+            string driveDetails = null;
+            var uri = "https://graph.microsoft.com/v1.0/" + tenetId + "/users/" + user.id + "/drive";
+            Console.WriteLine("URI : " + uri);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result);
+            var getUsersResult = await httpClient.GetAsync(uri);
+            if (getUsersResult.Content != null)
+            {
+                driveDetails = await getUsersResult.Content.ReadAsStringAsync();
+            }
+            return driveDetails;
+        }
+
+        private static async Task<string> GetUserCalendarDetails(User user, string result)
+        {
+            string calendarDetails = null;
+            var uri = "https://graph.microsoft.com/v1.0/" + tenetId + "/users/" + user.id + "/calendar";
+            Console.WriteLine("URI : " + uri);
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", result);
+            var getUsersResult = await httpClient.GetAsync(uri);
+            if (getUsersResult.Content != null)
+            {
+                calendarDetails = await getUsersResult.Content.ReadAsStringAsync();
+            }
+            return calendarDetails;
         }
 
         private static async Task<string> GetUserDetails(User user, string result)
